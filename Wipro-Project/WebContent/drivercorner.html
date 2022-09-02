@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	        function callServlet() {
+	            document.forms[0].action = "AdminRemoveDriver";
+	            document.forms[0].submit();
+	        }
+	    </script>
+<link rel="stylesheet" href="css/drivercorner.css">
+</head>
+<body>
+   <br><br><br><br><br><br><br><br>
+    
+	<h1 align="center">
+		<font>
+			Driver Corner
+		</font>
+	</h1>
+	
+	<br>
+	<center><table cellspaci\ng="10">
+	
+	<tr>
+		<center><form action="AdminAddDriver">
+    		<input type="submit" name="lastName" value="Add Driver" size="20">
+</form>
+</tr>
+        	<br><br>
+		<tr><center><form action="AdminViewDriver">
+    		<input type="submit" name="view" value="View Driver" size="20">
+</form></tr>
+	
+    <br><br>
+    <tr><center><button id="remove" name="Driver" class="float-left submit-button">Remove Driver</button>
+	</tr></table>
+	<script type="text/javascript">
+    document.getElementById("remove").onclick = function () {
+        location.href = "AdminRemoveSearch.html";
+    };
+</script>
+</body>
+
+</html>

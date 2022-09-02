@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		WELCOME TO OUR WEBSITE
+	</title>
+<link rel="stylesheet" href="css/adminwelcome.css">
+</head>
+ <body>
+ <br><br><br><br><br><br><br><br>
+
+	<h1 align="center">
+		<font>
+			Welcome Admin
+		</font>
+	</h1>
+	
+	<br><br><br><br>
+	
+	<center><table cellspacing="10">
+	
+	<tr>
+		<td><center><button id="driver" name="Driver" class="float-left submit-button">Driver Corner</button></td>
+		<td><center><button id="vehicle" name="Vehicle" class="float-left submit-button">Vehicle Corner</button></td>
+    <td><center><form action="AdminViewUser">
+    		<input type="submit" name="viewuser" value="View User" size="20">
+			</form></td>
+	</tr>
+	<script type="text/javascript">
+    document.getElementById("driver").onclick = function () {
+        location.href = "drivercorner.html";
+    };
+    document.getElementById("vehicle").onclick = function () {
+        location.href = "vehicalcorner.html";
+    };
+ </script>
+</body>
+</html>

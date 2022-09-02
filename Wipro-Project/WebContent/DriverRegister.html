@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<link rel="stylesheet" href="css/driverregister.css">
+</head>
+<body>
+<div class="container">
+    <div class="title">Add Driver</div>
+    <div class="content">
+      <form action="DriverRegister">
+        <div class="user-details">
+          <div class="input-box">
+           <br><br>
+            <span class="details">DriverName</span>
+            <br>
+            <input type="text" placeholder name="DriverName" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">UserName</span>
+            <br>
+            <input type="text" placeholder name="UserName" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Place of Origin</span>
+            <br>
+            <input type="text" placeholder name="pofo" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">PhoneNumber</span>
+            <br>
+            <input type="text" placeholder name="PhoneNumber" required>
+          </div>
+          <br>
+        <div class="gender-details">
+         <span class="gender-title">Gender &nbsp;</span>
+         <br>
+          Male: <input type="radio" name="Gender" onclick="getAnswer('Male')" value="Male" id="dot-1">
+          Female: <input type="radio" name="Gender" onclick="getAnswer('Female')" value="Female" id="dot-2">
+          Prefer not to say: <input type="radio" name="Gender" onclick="getAnswer('Prefer not to say')" value="Prefer not to say" id="dot-3">
+          <br>
+         <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="input-box">
+            <span class="details">Experience</span>
+            <br>
+            <input type="text" placeholder="In years only" name="Experience" required>
+          </div>
+          <br>
+           <div class="input-box">
+            <span class="details">License Number</span>
+            <br>
+            <input type="text" placeholder name="License" required>
+          </div>
+          <br>
+        <div class="button">
+          <input type="submit" value="Apply">
+        </div>
+        <br>
+         <div class="button">
+          <input type="submit" value="Reset">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

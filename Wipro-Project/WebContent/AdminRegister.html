@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<link rel="stylesheet" href="css/adminregister.css">
+</head>
+<body>
+<div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="AdminDetails">
+        <div class="admin-details">
+          <div class="input-box">
+            <span class="details">FullName</span>
+            <input type="text" placeholder="Enter your name" name="FullName" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" name="UserName" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="Email" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">PhoneNumber</span>
+            <input type="text" placeholder="Enter your number" name="PhoneNumber" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" name="Password" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">ConfirmPassword</span>
+            <input type="password" placeholder="Confirm your password" name="ConfirmPassword" required>
+          </div>
+        </div>
+        <br>
+        <div class="gender-details">
+         <span class="gender-title">Gender</span>
+          Male: <input type="radio" name="Gender" onclick="getAnswer('Male')" value="Male" id="dot-1">
+          Female: <input type="radio" name="Gender" onclick="getAnswer('Female')" value="Female" id="dot-2">
+          Prefer not to say: <input type="radio" name="Gender" onclick="getAnswer('Prefer not to say')" value="Prefer not to say" id="dot-3">
+          <br>
+         <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="input-box">
+            <span class="details">Bank Account Number</span>
+            <input type="text" placeholder="Enter your Account Number" name="accountNumber" required>
+          </div>
+          <br>
+           <div class="input-box">
+            <span class="details">Bank Ifsc code</span>
+            <input type="text" placeholder="Enter your Ifsc code" name="ifscCode" required>
+          </div>
+          <br>
+        <div class="input-box">
+            <select name="question" id="ques">
+    		<option value="pet">What is your pet name?</option>
+    		<option value="nick">What is your nick name?</option>
+    		<option value="dish">What is your favorite dish</option>
+    		<option value="game">What is your favorite game?</option>
+  			</select>
+        </div>
+        <br>
+        <div class="text">
+            <input type="text" name="answer" placeholder="Enter your answer for above question" id="ans">
+        </div>
+        <br>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <br>
+         <div class="button">
+          <input type="submit" value="Reset">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

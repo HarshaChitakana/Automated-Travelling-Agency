@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/vehiclecorner.css">
+	
+</head>
+<body>
+<br><br><br><br><br><br><br><br>
+	<h1 align="center">
+		<font>
+			Vehicle Corner
+		</font>
+	</h1>
+	
+	<br>
+	
+	<center><table cellspacing="10">
+	
+	<tr>
+		<center><form action="AdminAddVehicle">
+    		<input type="submit" name="lastName" value="Add Vehicle" size="20">
+</form></tr>
+        	<br><br>
+		<tr><center><form action="AdminViewVehicle">
+    		<input type="submit" name="view" value="View Driver" size="20">
+</form></tr>
+        
+    <br><br>
+    <tr><center><button id="remove" name="Vehicle" class="float-left submit-button">Remove Vehicle</button>
+	</tr>
+
+	<script type="text/javascript">
+    document.getElementById("remove").onclick = function () {
+        location.href = "AdminRVehicleSearch.html";
+    };
+    </script> 
+</body>
+
+</html>
